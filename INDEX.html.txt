@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws & Tails Pet Shop</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #ff914d;
+            padding: 15px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url("https://images.unsplash.com/photo-1518717758536-85ae29035b6d") center/cover;
+            height: 350px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            background-color: rgba(0,0,0,0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #ff914d;
+            margin-bottom: 20px;
+        }
+
+        /* Pet Cards */
+        .pets {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Contact Form */
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #ff914d;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff7a26;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#pets">Pets</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home -->
+    <div class="hero" id="home">
+        <h1>Welcome to Paws & Tails 🐾<br>Where Pets Find Love</h1>
+    </div>
+
+    <!-- Pets -->
+    <section id="pets">
+        <h2>Our Lovely Pets</h2>
+        <div class="pets">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16">
+                <h3>Dogs</h3>
+                <p>Friendly and loyal companions</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6">
+                <h3>Cats</h3>
+                <p>Playful and adorable friends</p>
+            </div>
+
+            <div class="card">
+                <img src="https://static.toiimg.com/thumb/115476664/115476664.jpg?height=746&width=420&resizemode=76&imgsize=27814">
+                <h3>Birds</h3>
+                <p>Colorful and cheerful pets</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location -->
+    <section id="location">
+        <h2>Our Location 📍</h2>
+        <p>Paws & Tails Pet Shop</p>
+        <p>Coimbatore, Tamil Nadu, India</p>
+        <p>Open: 9 AM – 8 PM</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Us 📞</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Paws & Tails Pet Shop | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
